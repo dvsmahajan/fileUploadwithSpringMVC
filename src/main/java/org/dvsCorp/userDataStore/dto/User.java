@@ -15,7 +15,8 @@ import org.hibernate.annotations.GenericGenerator;
 public class User implements Serializable{
 	
 	@Id
-	@GenericGenerator(name="primary",strategy="increment")
+	@GenericGenerator(name="primary",strategy="increment") //if we use mssql database than we have to use strategy=sequence 
+	
 	@GeneratedValue(generator="primary")
 	private int uId;
 	private String username;

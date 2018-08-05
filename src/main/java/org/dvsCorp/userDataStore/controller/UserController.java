@@ -34,30 +34,7 @@ public class UserController
 		return null;
 	}
 	
-//	@RequestMapping(value="/register.do",method=RequestMethod.POST)
-//	public ModelAndView registerUser(@RequestParam("photoUpload")MultipartFile file
-//			,@RequestParam("username")String username
-//			,@RequestParam("email")String email
-//			,@RequestParam("password")String password
-//			)
-//	{
-//		ModelAndView andView=new ModelAndView("/register.jsp");
-//		if(!file.isEmpty())
-//		{
-////			userServie.savePic(file);
-//			
-//			System.out.println(file.getContentType());
-//			if(file.getContentType().indexOf("image/")!=-1) {
-//				System.out.println("File Is :"+file.getContentType()+" Valid..........");
-//			}else {
-//				System.out.println("Unsupported..............");
-//				andView.addObject("fail", "Wrong type of file");
-//				return andView;
-//			}
-//		}
-//		
-//		return null;
-//	}
+
 	
 	
 	@RequestMapping(value="/register.do",method=RequestMethod.POST)
